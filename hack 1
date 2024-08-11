@@ -1,0 +1,38 @@
+var player_level = 100;
+
+// player_level must be a whole number ( 1 - 100 ).
+
+function setLevel(lvl) {
+    var player = Boot.prototype.game._state._current.user.source;
+    var level_value = lvl;
+
+    if (level_value === 1) {
+        player.data.stars = 0;
+        player.data.level = 1;
+        player.getLevel = () => { return 1 };
+        Boot.prototype.game._state._current.user.source.data.level = level_value;
+        Boot.prototype.game._state._current.user.source.getLevel = () => { return level_value };
+        return;
+    }
+
+    var i = level_value - 2;
+    var xpConstant = 1.042;
+
+    player.data.stars = Math.round((1 - Math.pow(xpConstant, i)) / (1 - xpConstant) * 20 + 10);
+    player.data.level = +level_value;
+
+    Boot.prototype.game._state._current.user.source.data.level = level_value;
+    Boot.prototype.game._state._current.user.source.getLevel = () => { return level_value };
+}
+
+var source = Boot.prototype.game._state._current.user.source;
+
+setLevel(player_level);
+
+source.data.stars += eval(source.getStarsToLevel());
+source.processStars();
+source.saveEnabled = true;
+source.forceSaveCharacter();
+source.appearanceChanged = true;alert(what level would u like them to be)
+
+
