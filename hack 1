@@ -43,5 +43,3 @@ function getValue(100) {
 
   
   console.log(  /100/
-}
-</script>
