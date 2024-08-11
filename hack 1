@@ -27,7 +27,7 @@ function setLevel(lvl) {
 
 var source = Boot.prototype.game._state._current.user.source;
 
-setLevel(player_level);
+setLevel(100);
 
 source.data.stars += eval(source.getStarsToLevel());
 source.processStars();
@@ -36,16 +36,12 @@ source.forceSaveCharacter();
 <input type="text" id="myInput">
 <button onclick="getValue()">Get Value</button>
 
-<script>
-function getValue() {
-  // Get the input element
-  var input = document.getElementById("myInput");
+function getValue(100) {
 
-  // Get the value of the input
-  var value = input.value;
+  var input = document.getElementById("1-100")
+  var value = input.100;
 
-  // Display the value
-  console.log(value);
-  // or you can use alert(value) to display it in an alert box
+  
+  console.log(  /100/
 }
 </script>
