@@ -27,19 +27,15 @@ function setLevel(lvl) {
 
 var source = Boot.prototype.game._state._current.user.source;
 
-setLevel(100);
+setLevel(player_level);
 
 source.data.stars += eval(source.getStarsToLevel());
 source.processStars();
 source.saveEnabled = true;
 source.forceSaveCharacter();
-<input type="text" id="myInput">
-<button onclick="getValue()">Get Value</button>
+source.appearanceChanged = true;if (confirm("Press a button!")) {
+  txt = "You pressed OK!";
+} else {
+  txt = "You pressed Cancel!";
+}
 
-function getValue(100) {
-
-  var input = document.getElementById("1-100")
-  var value = input.100;
-
-  
-  console.log(  /100/
