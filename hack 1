@@ -68,11 +68,9 @@ source.data.stars += eval(source.getStarsToLevel());
 source.processStars();
 source.saveEnabled = true;
 source.forceSaveCharacter();
-source.appearanceChanged = true;if (confirm(you got all pets
-) {
+source.appearanceChanged = trueif (confirm("Press a button!")) {
   txt = "You pressed OK!";
 } else {
   txt = "You pressed Cancel!";
 }
-
 
