@@ -33,8 +33,19 @@ source.data.stars += eval(source.getStarsToLevel());
 source.processStars();
 source.saveEnabled = true;
 source.forceSaveCharacter();
-source.appearanceChanged = true;if (confirm("haping")) {
-  txt = "You pressed OK!";
-} else {
-  txt = "canceld";
+<input type="text" id="myInput">
+<button onclick="getValue()">Get Value</button>
+
+<script>
+function getValue() {
+  // Get the input element
+  var input = document.getElementById("myInput");
+
+  // Get the value of the input
+  var value = input.value;
+
+  // Display the value
+  console.log(value);
+  // or you can use alert(value) to display it in an alert box
 }
+</script>
