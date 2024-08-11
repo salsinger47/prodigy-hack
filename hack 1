@@ -33,6 +33,7 @@ source.data.stars += eval(source.getStarsToLevel());
 source.processStars();
 source.saveEnabled = true;
 source.forceSaveCharacter();
-source.appearanceChanged = true;alert(what level would u like them to be)
+source.appearanceChanged = true;
+
 
 
