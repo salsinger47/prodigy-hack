@@ -1,6 +1,6 @@
 var player_level = 100;
 
-// player_level must be a whole number ( 1 - 100 ).
+// player_level must be a whole number ( 1 - 500 ).
 
 function setLevel(lvl) {
     var player = Boot.prototype.game._state._current.user.source;
